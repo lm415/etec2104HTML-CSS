@@ -10,6 +10,7 @@ def get(): return """
 .titlebar {
     background: blue;
     text-align: right;
+    color: white;
 }
 
 

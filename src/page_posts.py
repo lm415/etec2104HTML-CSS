@@ -83,6 +83,14 @@ div.button2 {
     </button></div>
     <div class="button2"><img src="/html/EMOJI.png" height="64" width="64" style="position: absolute; left: 1em;">Posted(6 days ago) Views(3)
     </button></div>
+    <div class="button"><img src="/html/EMOJI.png" height="64" width="64" style="position: absolute; left: 1em;">Posted(5 days ago) Views(2)
+    </button></div>
+    <div class="button2"><img src="/html/EMOJI.png" height="64" width="64" style="position: absolute; left: 1em;">Posted(16 days ago) Views(76)
+    </button></div>
+    <div class="button"><img src="/html/EMOJI.png" height="64" width="64" style="position: absolute; left: 1em;">Posted(12 days ago) Views(5)
+    </button></div>
+    <div class="button2"><img src="/html/EMOJI.png" height="64" width="64" style="position: absolute; left: 1em;">Posted(18 days ago) Views(32)
+    </button></div>
 </div>
      
 </body>
