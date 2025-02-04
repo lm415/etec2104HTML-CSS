@@ -65,9 +65,9 @@ div.button {
     <hr>
     <div>Real Name: <input size=10></div>
     <hr>
-    <div>Password:<input type=”password” size=10></div>
+    <div>Password:<input type="password" size=10></div>
     <hr>
-    <div>Date of Birth:<input type=”date”></div>
+    <div>Date of Birth:<input type="date"></div>
     <div class="button">Sign Up</button>
 </div>
      
