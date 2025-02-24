@@ -29,7 +29,8 @@ class App:
 
     @cherrypy.expose
     def signup(self):
-        return page_signup.get()
+        t = mako.template.Template(filename=f"{PYPATH}/../html/page_signup.html")
+        return t.render()
     
     @cherrypy.expose
     def posts(self):
