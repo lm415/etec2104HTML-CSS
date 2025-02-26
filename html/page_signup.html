@@ -54,6 +54,29 @@ div.button {
     
 }
 
+.alert {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ffcccc;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.welcome {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #cbf1aa;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
 </style>
 <body>
 
@@ -69,22 +92,36 @@ div.button {
     <div class="button"><button onclick="foo()">Sign Up</button></button>
 </div>
 <script>
+
+    function signup(message){
+        let tmp = document.createElement("div");
+        tmp.classList.add("alert");
+        document.body.appendChild(tmp);
+        tmp.appendChild( document.createTextNode(message) );
+    }
+
+    function signedup(message){
+        let tmp = document.createElement("div");
+        tmp.classList.add("welcome");
+        document.body.appendChild(tmp);
+        tmp.appendChild( document.createTextNode(message) );
+    }
     //Would not find js file even though it is in the same folder
     //so to test I put it all here
     function foo() {
         let email = document.getElementById("email").value;
         if (!email.includes("@")) {
-            alert("Bad email!");
+            signup("Bad email!");
             return;  
         }
         let emailCheck = email.split("@");
         if (emailCheck[0].length < 1) {
-            alert("Bad email!");
+            signup("Bad email!");
             return; 
         }
     
         if (emailCheck[1].length < 1) {
-            alert("Bad email!");
+            signup("Bad email!");
             return;  
         }
         let dob = document.getElementById("dob").valueAsNumber;
@@ -92,10 +129,10 @@ div.button {
         let ageCheck = today - (1000 * 60 * 60 * 24 * 365 * 13);
         if (dob > ageCheck)
         {
-            alert("Too young, must be 13+ years old");
+            signup("Too young, must be 13+ years old");
             return;
         }
-        alert("Account made!");
+        signedup("Account made!");
     }
     </script>
 </body>
